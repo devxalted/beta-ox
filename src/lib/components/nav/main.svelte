@@ -50,12 +50,12 @@
         <div class="md:hidden">
             <div class="bg-gray-800 flex justify-center py-2 hover:bg-orange-400 text-white">
                 <button on:click={handleKnowledgeCenter}>
-                    Menu 1
+                    Knowledge Center
                 </button>
             </div>
-            <div class="bg-gray-800 flex justify-center py-2 hover:bg-orange-400 text-white">
-                <button on:click={handleGetStarted}>
-                    Menu 1
+            <div class="bg-gray-800 flex justify-center py-2 text-white pb-4">
+                <button on:click={handleGetStarted} class="bg-orange-400 rounded-xl px-3 w-1/2 py-1">
+                    <span class="shadow-xl">Get Started</span>
                 </button>
             </div>
         </div>
