@@ -1,4 +1,4 @@
-<div id="offerings" class="flex-grow basis-full">
+<div id="offerings" class="basis-full">
     <div class="pt-10"></div>
     <div class="pt-16 mx-auto border-t border-base-300 max-w-[70%]"></div>
     <div class="flex justify-center">

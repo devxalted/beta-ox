@@ -1,4 +1,4 @@
-<div id="contact" class="flex-grow basis-full">
+<div id="contact" class="basis-full">
     <div class="flex flex-wrap justify-center">
         <h2 class="font-bold text-gray-600 text-xl my-6">
             Let's Get Started!

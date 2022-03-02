@@ -1,4 +1,4 @@
-<div id="for-who" class="flex justify-center lg:py-24 py-8 bg-gray-100 flex-grow basis-full">
+<div id="for-who" class="flex justify-center lg:py-24 py-8 bg-gray-100 basis-full">
         <div class="max-w-3xl flex justify-center flex-wrap px-4  text-gray-600">
             <h1 class="basis-full text-2xl md:text-4xl font-bold text-center my-4 text-gray-600">
                 Are we the right fit for each other?

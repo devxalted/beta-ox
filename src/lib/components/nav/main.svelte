@@ -39,7 +39,7 @@
     <!--Mobile Nav -->
     <div class="md:hidden flex justify-between p-6 bg-gray-800">
         <div>
-            <a href="/"><img src="../../assets/logos/Original.svg" alt="Beta Ox Fitness Logo" class="h-20"></a>
+            <a href="/"><img src={logo} alt="Beta Ox Fitness Logo" class="h-20"></a>
         </div>
         <div class="mr-4 my-auto">
             <button on:click={handleMobileMenu}>
@@ -49,7 +49,7 @@
     </div>
     {#if mobileMenuShowing}
         <div class="md:hidden">
-            <div class="bg-gray-800 flex justify-center py-2 hover:bg-orange-400 text-white">
+            <div class="bg-gray-800 flex justify-center py-2 text-white">
                 <button on:click={handleKnowledgeCenter}>
                     Knowledge Center
                 </button>
