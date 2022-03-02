@@ -25,11 +25,11 @@
             <a href="/"><img src="./src/assets/logos/Original.svg" alt="Beta Ox Fitness Logo" class="h-24"></a>
         </div>
         <div class="flex space-x-8 my-auto mr-6">
-            <button class="text-white font-bold h-14 p-4 hover:text-orange-400"
+            <button class="text-white font-bold h-14 p-4 hover:text-primary-secondary-light"
                     on:click={handleKnowledgeCenter}>
                 Knowledge Center
             </button>
-            <button class="text-white font-bold h-14 p-4 bg-orange-400 hover:bg-orange-500 rounded-xl hover:text-gray-700"
+            <button class="text-gray-800 font-bold h-14 p-4 bg-primary-main hover:bg-primary-secondary-light rounded-xl shadow-inner"
                     on:click={handleGetStarted}>
                 <span class="shadow-lg hover:shadow-xl">Get Started</span>
             </button>
@@ -54,7 +54,7 @@
                 </button>
             </div>
             <div class="bg-gray-800 flex justify-center py-2 text-white pb-4">
-                <button on:click={handleGetStarted} class="bg-orange-400 rounded-xl px-3 w-1/2 py-1">
+                <button on:click={handleGetStarted} class="bg-primary-main text-gray-800 rounded-xl px-3 w-1/2 py-1">
                     <span class="shadow-xl">Get Started</span>
                 </button>
             </div>

@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/ff2f2f774e.js" crossorigin="anonymous"></script>
 </svelte:head>
 
-<div id="main-container">
+<div id="main-container" class="bg-gray-100">
         <Hero />
     <div class="container mx-auto flex flex-wrap">
         <ForWho />
