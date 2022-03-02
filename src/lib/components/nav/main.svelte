@@ -1,4 +1,5 @@
 <script>
+    import logo from '$lib/assets/logos/Original.svg'
     import {goto} from '$app/navigation'
     let mobileMenuShowing = false
 
@@ -22,7 +23,7 @@
     <!-- Desktop Nav -->
     <div class="hidden md:flex justify-between p-8 bg-gray-800">
         <div class="pl-16">
-            <a href="/"><img src="./src/assets/logos/Original.svg" alt="Beta Ox Fitness Logo" class="h-24"></a>
+            <a href="/"><img src={logo} alt="Beta Ox Fitness Logo" class="h-24"></a>
         </div>
         <div class="flex space-x-8 my-auto mr-6">
             <button class="text-white font-bold h-14 p-4 hover:text-primary-secondary-light"
@@ -38,7 +39,7 @@
     <!--Mobile Nav -->
     <div class="md:hidden flex justify-between p-6 bg-gray-800">
         <div>
-            <a href="/"><img src="./src/assets/logos/Original.svg" alt="Beta Ox Fitness Logo" class="h-20"></a>
+            <a href="/"><img src="../../assets/logos/Original.svg" alt="Beta Ox Fitness Logo" class="h-20"></a>
         </div>
         <div class="mr-4 my-auto">
             <button on:click={handleMobileMenu}>

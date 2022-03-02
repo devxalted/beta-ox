@@ -1,3 +1,6 @@
+<script>
+    import personalPhoto from '$lib/assets/barbell_photo.jpg'
+</script>
 <div id="about-me" class="flex-grow basis-full">
     <div class="bg-gray-600 mt-10 pt-4">
         <div class="flex justify-center">
@@ -8,7 +11,7 @@
         <div class="mx-auto max-w-[70%] border-t border-base-300 my-5"/>
         <div class="flex justify-center flex-wrap">
             <div class="my-2 mask mask-squircle">
-                <img src="./src/assets/barbell_photo.jpg" alt="personal-photo" class="scale-125">
+                <img src={personalPhoto} alt="personal-photo" class="scale-125">
             </div>
             <h2 class="text-xl text-white font-bold shadow-xl my-2">
                 Josh Harper
