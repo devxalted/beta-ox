@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/ff2f2f774e.js" crossorigin="anonymous"></script>
 </svelte:head>
 
-<div id="main-container" class="bg-gradient-to-b from-gray-300 to-transparent overflow-hidden m-1.5 rounded-t-md">
+<div id="main-container" class="bg-gradient-to-b from-gray-200 to-transparent overflow-hidden m-1.5 rounded-t-md">
     <Hero />
     <AboutBetaOx />
 <!--    <div class="bg-gradient-to-b from-gray-300 to-transparent py-10 rounded-t-md">-->
