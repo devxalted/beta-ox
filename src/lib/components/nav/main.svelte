@@ -37,7 +37,7 @@
         </div>
     </div>
     <!--Mobile Nav -->
-    <div class="md:hidden flex justify-between p-6 bg-gray-800">
+    <div class="md:hidden flex justify-between p-6 bg-gray-800 padding-6">
         <div>
             <a href="/"><img src={logo} alt="Beta Ox Fitness Logo" class="h-20"></a>
         </div>
@@ -62,3 +62,4 @@
         </div>
     {/if}
 </div>
+
