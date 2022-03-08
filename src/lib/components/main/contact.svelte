@@ -12,14 +12,14 @@
         <div class="container basis-full mx-auto max-w-md mb-3 md:mb-0">
             <div class="flex justify-between mx-auto -mb-10 md:mb-10 px-8 md:px-0">
                 <a href="https://twitter.com/BetaOxFitness"
-                   class="2xl:text-2xl xl:text-xl hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/betaoxfitness/" class="2xl:text-2xl xl:text-xl hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i
+                   class="2xl:text-2xl xl:text-xl md:text-lg hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/betaoxfitness/" class="2xl:text-2xl xl:text-xl md:text-lg hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i
                         class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/beta_ox_fitness/" class="2xl:text-2xl xl:text-xl hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i
+                <a href="https://www.instagram.com/beta_ox_fitness/" class="2xl:text-2xl xl:text-xl md:text-lg hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i
                         class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCY5AtnqsNwbPrJ7UlAimoUA" class="2xl:text-2xl xl:text-xl hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i
+                <a href="https://www.youtube.com/channel/UCY5AtnqsNwbPrJ7UlAimoUA" class="2xl:text-2xl xl:text-xl md:text-lg hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i
                         class="fa-brands fa-youtube"></i></a>
-                <a href="#contact-form" class="2xl:text-2xl xl:text-xl hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i class="fa-solid fa-envelope" ></i></a>
+                <a href="#contact-form" class="2xl:text-2xl xl:text-xl md:text-lg hover:scale-125 hover:drop-shadow-2xl hover:text-primary-main"><i class="fa-solid fa-envelope" ></i></a>
             </div>
         </div>
     </div>
