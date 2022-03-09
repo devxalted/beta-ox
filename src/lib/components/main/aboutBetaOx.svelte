@@ -2,7 +2,7 @@
 
 </script>
 
-<div id="about-beta-ox" class="flex justify-center flex-wrap mb-10 py-16">
+<section id="about-beta-ox" class="flex justify-center flex-wrap md:mb-10 pt-12 pb-3">
     <div class="text-center basis-full mb-8">
         <h2 class="text-2xl md:text-4xl text-gray-600 font-bold mx-auto px-5">
             <span class="drop-shadow-xl">Mission Statment/About Beta Ox</span>
@@ -15,4 +15,4 @@
             </p>
         </div>
     </div>
-</div>
+</section>

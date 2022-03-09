@@ -4,7 +4,16 @@ const config = {
 		themes: false
 	},
 	theme: {
+		fontFamily: {
+			sans: ['Lato']
+		},
 		extend: {
+			screens: {
+				'3xl':'3000px'
+			},
+			fontFamily: {
+				name: ['Covered By Your Grace']
+			},
 			colors: {
 				primary: {
 					'main': '#f6ce6c',

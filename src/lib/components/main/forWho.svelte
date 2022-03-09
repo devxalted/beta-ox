@@ -1,4 +1,4 @@
-<div class="mx-auto pb-8 lg:pb-16">
+<section class="mx-auto pb-8 lg:pb-12">
     <div id="for-who" class="flex justify-center basis-full">
         <div class="max-w-3xl flex justify-center flex-wrap px-4  text-gray-600">
             <h1 class="basis-full text-2xl md:text-4xl font-bold text-center my-4 text-gray-600">
@@ -18,4 +18,4 @@
         </div>
     </div>
 
-</div>
+</section>

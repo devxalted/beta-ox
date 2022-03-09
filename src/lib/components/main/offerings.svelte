@@ -1,6 +1,6 @@
-<div id="offerings" class="basis-full xl:mt-5 mb-10 lg:mb-0">
-<!--    <div class="pt-10"></div>-->
-    <div class="pt-16 mx-auto border-t border-gray-300 max-w-[55%] drop-shadow-xl"></div>
+<div id="offerings" class="basis-full mb-10 lg:mb-0">
+<!--    <div class="pt-12 md:hidden"></div>-->
+<!--    <div class="pt-16 mx-auto border-t border-gray-300 border-opacity-50 max-w-[55%] drop-shadow-xl"></div>-->
     <div class="flex justify-center py-8">
         <h2 class="text-2xl lg:text-4xl text-gray-600 font-bold text-center">
             <span class="drop-shadow-xl">I offer a variety of programs...</span>
