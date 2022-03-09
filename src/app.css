@@ -5,12 +5,12 @@
 
 @layer components {
     .hero-image {
-        background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), rgba(68, 68, 68, 0.85)), url('./src/lib/assets/bg1.jpg');
+        background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), rgba(68, 68, 68, 0.85)), url('lib/assets/bg1.jpg');
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
     .hero-image-md {
         background-size:cover;
-        background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(68, 68, 68, 0.8)), url('./src/lib/assets/bg4.jpg');
+        background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(68, 68, 68, 0.8)), url('lib/assets/bg4.jpg');
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
 }
