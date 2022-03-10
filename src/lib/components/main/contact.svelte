@@ -49,7 +49,7 @@
         return passed
     }
 
-    const handleEmailSubmit = () => {
+    const handleEmailSubmit = async () => {
         let isEmail = validateEmail()
         let namePass = checkNameRequired()
         let emailPass = checkEmailRequired()
@@ -59,19 +59,43 @@
         if (!emailPass) requiredEmailError = true
 
         if (!namePass || !emailPass || !isEmail) return
-        //Do something here
-        console.log('Validated and moving forward.')
+
+
+        //Handle Email
+
+        let config = {
+            method: 'POST',
+            headers: {
+                'Content-Type': ' application/json'
+            },
+            body: JSON.stringify({
+                name,
+                from: email,
+                msgBody: message
+            })
+        }
+
+        let res = await fetch('/api/contact/email', config)
+        res = await res.json()
+
+        if (res.msg === 'Sent successfully.') {
+            emailForm = false;
+            name = ''
+            phone = ''
+            message = ''
+        }
     }
 
     const validatePhone = () => {
         // eslint-disable-next-line no-control-regex
-        let phoneRegex = new RegExp(/s/)
-        let passed = phoneRegex.test(email)
-        if (passed) invalidPhoneError = false;
-        return passed
+        // let phoneRegex = new RegExp(/s/)
+        // let passed = phoneRegex.test(email)
+        // if (passed) invalidPhoneError = false;
+        // return passed
+        return true
     }
 
-    const handleSmsSubmit = () => {
+    const handleSmsSubmit = async () => {
         let isPhone = validatePhone()
         let namePass = checkNameRequired()
         let phonePass = checkPhoneRequired()
@@ -81,10 +105,33 @@
         if (!phonePass) requiredPhoneError = true
 
         if (!namePass || !phonePass || !isPhone) return
-        //Do something here
-        console.log('Validated and moving forward.')
-    }
 
+
+        //Handle SMS
+
+        let config = {
+            method: 'POST',
+            headers: {
+                'Content-Type': ' application/json'
+            },
+            body: JSON.stringify({
+                name,
+                from: phone,
+                msgBody: message
+            })
+        }
+
+        let res = await fetch('/api/contact/sms', config)
+        res = await res.json()
+
+        if (res.msg === 'Sent successfully.') {
+            smsForm = false;
+            name = ''
+            phone = ''
+            message = ''
+        }
+
+    }
 
 
 </script>
@@ -144,7 +191,7 @@
                                class="w-full px-4 py-2.5 text-sans text-lg rounded-md bg-gray-50 focus:outline-2 focus:outline-primary-main focus:drop-shadow-xl focus:font-bold hover:border-2 border-2 hover:border-primary-main">
                         {#if requiredEmailError}
                             <label for="name" class="text-s font-light text-red-600 ml-4"><i class="fa-solid fa-chevron-up"></i> Required</label>
-                            {:else if invalidEmailError}
+                        {:else if invalidEmailError}
                             <label for="name" class="text-s font-light text-red-600 ml-4"><i class="fa-solid fa-chevron-up"></i> Please enter a valid email...</label>
                         {/if}
                     </div>

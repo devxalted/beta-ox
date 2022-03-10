@@ -26,6 +26,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"daisyui": "^2.2.2"
+		"daisyui": "^2.2.2",
+		"dotenv": "^16.0.0",
+		"twilio": "^3.75.1"
 	}
 }
