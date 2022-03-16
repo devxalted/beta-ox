@@ -1,7 +1,5 @@
 <script>
     export let prismicResponse
-
-    console.log(prismicResponse)
     let menuShowing = false;
 </script>
 <section id="hero" class="justify-center rounded-t-md">
