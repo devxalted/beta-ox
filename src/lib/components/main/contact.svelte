@@ -1,4 +1,10 @@
 <script>
+    //Data Import
+    export let prismicResponse
+    let data = prismicResponse.data.body.filter(body => body.slice_type === 'call_to_action')
+    let header = data[0].primary.call_to_action_header[0].text
+    let supportingText = data[0].primary.call_to_action_support[0].text
+
     let emailForm = false
     let smsForm = false
     let invalidEmailError = false
@@ -63,27 +69,27 @@
 
         //Handle Email
 
-        let config = {
-            method: 'POST',
+        fetch("https://formsubmit.co/ajax/bbe563784a3459fc95fc46af142740e0", {
+            method: "POST",
             headers: {
-                'Content-Type': ' application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
             body: JSON.stringify({
                 name,
-                from: email,
-                msgBody: message
+                email,
+                message
             })
-        }
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
 
-        let res = await fetch('/api/contact/email', config)
-        res = await res.json()
+        emailForm = false;
+        name = ''
+        phone = ''
+        message = ''
 
-        if (res.msg === 'Sent successfully.') {
-            emailForm = false;
-            name = ''
-            phone = ''
-            message = ''
-        }
     }
 
     const validatePhone = () => {
@@ -139,10 +145,10 @@
 <section id="contact" class="basis-full">
     <div class="flex flex-wrap justify-center relative">
         <h2 class="font-bold text-gray-600 text-xl 2xl:text-3xl mb-6 basis-full text-center drop-shadow-xl">
-            Let's Get Started!
+            {header}
         </h2>
         <p class="text-gray-600 text-center px-3 md:px-0">
-            Contact me via email, sms, or social media by clicking any of the links below
+            {supportingText}
         </p>
         <div class="basis-full w-full flex justify-center my-3">
             <div class="basis-full border-t border-gray-300 max-w-xl mx-10 mb-3 md:mb-0 md:mx-0"></div>

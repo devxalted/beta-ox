@@ -10,7 +10,7 @@ export const post = async ({request}) => {
 
     let body = await request.json()
     let {name, from, msgBody} = body
-    let to = process.env.TO_PHONE_NUMBER_DEV
+    let to = process.env.TO_PHONE_NUMBER_PROD
     let twilioNumber = process.env.TWILIO_NUMBER
 
     let sendBody = `

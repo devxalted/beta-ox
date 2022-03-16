@@ -1,3 +1,10 @@
+<script context="module">
+    import createClient from '$lib/prismicClient';
+
+    const client = createClient(fetch)
+    const prismicQuery = client.getFirst()
+</script>
+
 <script>
     import Hero from '$lib/components/main/hero.svelte'
     import ForWho from '$lib/components/main/forWho.svelte'
@@ -17,18 +24,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Covered+By+Your+Grace&family=Hubballi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet">
 </svelte:head>
 
-<div id="main-container" class="bg-gradient-to-b from-gray-50 md:from-gray-300 to-transparent m-1.5 rounded-t-md">
-    <Hero />
-    <AboutBetaOx />
-<!--    <div class="bg-gradient-to-b from-gray-300 to-transparent py-10 rounded-t-md">-->
+{#await prismicQuery}
+    <div>
+        Loading
+    </div>
+{:then prismicResponse}
+    <div id="main-container" class="bg-gradient-to-b from-gray-50 md:from-gray-300 to-transparent m-1.5 rounded-t-md">
+        <Hero {prismicResponse}/>
+        <AboutBetaOx {prismicResponse}/>
+        <!--    <div class="bg-gradient-to-b from-gray-300 to-transparent py-10 rounded-t-md">-->
         <div class="container flex flex-wrap mx-auto">
-            <Offerings/>
-            <ForWho/>
+            <Offerings {prismicResponse}/>
+            <ForWho {prismicResponse}/>
         </div>
-<!--    </div>-->
-    <Divider1 />
-    <Divider2 />
-    <AboutMe />
-    <Contact />
-    <Certs />
-</div>
+        <!--    </div>-->
+        <Divider1 />
+        <Divider2 />
+        <AboutMe {prismicResponse} />
+        <Contact {prismicResponse} />
+        <Certs />
+    </div>
+{/await}
